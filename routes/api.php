@@ -18,5 +18,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('login', 'App\Http\Controllers\Api\AuthController@login');
+Route::post('signup', 'App\Http\Controllers\Api\AuthController@signup');
 Route::post('emailVerification', 'App\Http\Controllers\Api\AuthController@emailVerification');
+Route::post('login', 'App\Http\Controllers\Api\AuthController@login');
+Route::post('forgotPassword', 'App\Http\Controllers\Api\AuthController@forgotPassword');
+Route::post('updatePassword', 'App\Http\Controllers\Api\AuthController@updatePassword');
+
+
+
+
+
+
+

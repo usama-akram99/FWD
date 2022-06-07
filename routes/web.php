@@ -17,3 +17,7 @@ use app\Http\Controllers\MailController;
 
 Route::get('test-email', 'App\Http\Controllers\MailController@sendEmail');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
